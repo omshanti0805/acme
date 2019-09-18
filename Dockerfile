@@ -1,6 +1,6 @@
 FROM php:7.2-apache
 
-COPY acmestore/ /var/www/html/
+COPY omsampleapp/ /var/www/html/
 
 #RUN apk update; \
 
