@@ -30,4 +30,15 @@ node {
            app.push("$BUILD_NUMBER")
         }
     }
+
+    stage('Pull image from registry'){
+
+        agent {
+
+            docker {
+                image 'india2022/sample:$BUILD_NUMBER'
+                args '-p 8888:80'
+            }
+        }
+    }
 }
