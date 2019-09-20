@@ -31,7 +31,7 @@ node {
         }
     }
 
-    stage('Pull image from registry'){
+/*    stage('Pull image from registry'){
 
         agent {
 
@@ -40,5 +40,6 @@ node {
                 args '-p 8888:80'
             }
         }
-    }
+    }*/ //This is to pull a docker image
+        //Try new method 
 }
